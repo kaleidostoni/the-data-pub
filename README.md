@@ -8,3 +8,12 @@ Nos encontramos en meetup.com: https://meetup.com/thedatapub
 En FB: https://facebook.com/thedatapub
 En TW: https://twitter.com/thedatapub
 
+
+## UX
+
+Competencia directa:
+
++ http://www.recluit.com/
++ https://www.glassdoor.com/index.htm
++ https://www.tecnoempleo.com/
++ http://wheresheworks.com/about-us/
