@@ -2,57 +2,33 @@ const btnNext = () => {
     window.location.href = "../views/perfil2-user.html";
 }
 
-const firstInput = document.getElementById('study');
-console.log(firstInput);
-const secondInput = document.getElementById('company');
-console.log(secondInput);
-const thirdInput = document.getElementById('experience');
-console.log(thirdInput);
+var input = document.getElementById('study').value;
+var subBtn = document.getElementById('formUserSubmit');
 
-//firstInput.addEventListener('keyup',getvalue());
+var print = document.getElementById('vacant')
 
-function getvalue(firstInput) {
-    const firstValue = firstInput.value;
-    console.log(firstValue);
+subBtn.addEventListener('click' , createVacant);
+
+const createVacant = (input) => {
+  console.log(input)
+  
+  //var text = input.value();
+  console.log('es esto' + input)
+  paintVacant (input)
+  //console.log('aqui se pintara' + text);
+
 }
 
+/*function paintVacant (input) {
+  console.log('no pinta lo que quiero')
+  var div = document.createElement("div");
+  var p = document.createElement("p");
+  
 
-$("#formUserProfile").submit(function(e){
-    e.preventDefault();
-    const firstInput = $('#study').val();
-    console.log(firstInput);
+  p.innerText = input;
 
-    //const userpassword = $('#inputPasswordU').val();
-    //console.log(companypassword);
-    //toObject(useremail,userpassword);
-});
-// guarda el mail y la contraseña en un objeto 
-/*const toObject = (email,password)=>{
-    console.log(email);
-    console.log(password);
-let object = [{
-    emailUser:email,
-    passwordUser:password
-}]
-console.log(object);
-objectToLocalStorage(object);
-}*/
-
-
-/*const getValueInput = (e) => {
-    e.preventDeafult();
-    const firstVal = firstInput.value;
-    console.log(firstVal);
-    //toObject(firstVal)
-}
-
-//const toObject = (firstVal)=>{
-    //console.log(firstVal);
+  div.appendChild(p);
+  print.appendChild(div);
+  
     
-//let object = [{
-    //school:firstVal,
-    
-//}]
-//console.log(object);
-//objectToLocalStorage(object);
-//}*/
+  }*/
