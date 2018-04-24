@@ -13,22 +13,46 @@
     <title>Company Home</title>
 </head>
 <body>
-   <h1>HOME</h1>
+        <h1>HOME</h1>
         <h3>Publica una vacante</h3>
         <form id="job-form">
                 <div class="form-group">
                         <label for="question1">¿Qué estás buscando?</label>
                         <select class="form-control" id="question1">
-                          <option val="Chief Data Officer">Chief Data Officer</option>
-                          <option val="Chief Data Scientist">Chief Data Scientist</option>
-                          <option val="Data Scientist">Data Scientist</option>
-                          <option val="Data Analyst">Data Analyst</option>
-                          <option val="Data Engineer">Data Engineer</option>
-                          <option val="BI Analyst">BI Analyst</option>
+                          <option selected="selected">Chief Data Officer</option>
+                          <option selected="selected">Chief Data Scientist</option>
+                          <option selected="selected">Data Scientist</option>
+                          <option selected="selected">Data Analyst</option>
+                          <option selected="selected">Data Engineer</option>
+                          <option selected="selected">BI Analyst</option>
                         </select>
+                        <div class="form-group">
+                                <label for="question2">2.¿Qué necesita saber? (lista de capacidades)</label>
+                                <textarea class="form-control" id="question2" rows="5"></textarea>
+                         </div>
+                         <div class="form-group">
+                                <label for="question3">3.¿Cómo va a ser su día a día?</label>
+                                <textarea class="form-control" id="question3" rows="5"></textarea>
+                         </div>
+                         <div class="form-group">
+                                <label for="question4">4.¿Cómo vas a saber si te está entregando valor?</label>
+                                <textarea class="form-control" id="question4" rows="5"></textarea>
+                         </div>
+                         <div class="form-group">
+                                <label for="question5">5.¿Cuánto pagarás, y en qué esquema? (obligatorio)</label>
+                                <textarea class="form-control" id="question5" rows="5"></textarea>
+                         </div>
+                         <div class="form-group">
+                                <label for="question6">6.¿Qué ofreces aparte del sueldo?</label>
+                                <textarea class="form-control" id="question3" rows="6"></textarea>
+                         </div>
+                         <div class="form-group">
+                                <label for="question6">7.¿Dónde te ubicas?</label>
+                                <textarea class="form-control" id="question3" rows="6"></textarea>
+                         </div>
                         <div class="form-group row">
                                 <div class="col-sm-10">
-                                  <button type="submitjob" class="btn btn-primary">Sign in</button>
+                                  <button id="submit-btn" type="submit" class="btn btn-primary">Sign in</button>
                                 </div>
                         </div>
                 </div>
