@@ -27,3 +27,20 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.btn-a {
+  background-color: #0096fe;
+  border-color: #0096fe;
+}
+
+.btn-b {
+  background-color: #f05926;
+}
+
+.btn-c {
+  background-color: #39b447;
+}
+
+.btn-primary {
+  border-color: #0000;
+}
