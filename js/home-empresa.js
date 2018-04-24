@@ -5,10 +5,12 @@ const jobVacantsSection = $('#job-vacants-section');
 
 // Esta función guarda el valor de la primer pregunta(select)
 var question1 = $( "#question1" ) ;
+
 const savingSelectedOption = ()=>{
    $( "#question1 option:selected" ).each(function() {
         question1 = $( this ).text() + " ";
-        console.log(question1);
+        // console.log(question1);
+        return question1;
     });
 }
 question1.change(savingSelectedOption);
@@ -25,29 +27,30 @@ const savingAnswers = (e)=>{
     const question7 = $( "#question7").val();
 paintingJobVacant(question2,question3,question4,question5,question6,question7);
 };
-
 submitBtn.click(savingAnswers);
+
 //funcion que pinta la vacante 
 const paintingJobVacant = (q2, q3, q4, q5, q6, q7) => {
    let template
     template += `<div class="card">
     <div class="card-header">
+    <button type="button" class="btn btn-danger right">X</button>
     </div>
     <div class="card-body">
       <h5 class="card-title">TITLE</h5>
-      <h4>Capacidades<h4>
+      <h6>Capacidades</h6>
       <p class="card-text">${q2}</p>
-      <h4>Día a día<h4>
+      <h6>Día a día</h6>
       <p class="card-text">${q3}</p>
-      <h4>Valor<h4>
+      <h6>Valor</h6>
       <p class="card-text">${q4}</p>
-      <h4>Sueldo y ezquema de pago<h4>
+      <h6>Sueldo y ezquema de pago</h6>
       <p class="card-text">${q5}</p>
-      <h4>Prestaciones<h4>
+      <h6>Prestaciones</h6>
       <p class="card-text">${q6}</p>
-      <h6>Capacidades<h6>
+      <h6>Capacidades</h6>
       <p class="card-text">${q7}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-primary">Editar</a>
     </div>
   </div>`
 
