@@ -2,33 +2,52 @@ const btnNext = () => {
     window.location.href = "../views/perfil2-user.html";
 }
 
-var input = document.getElementById('study').value;
+var inputOne = document.getElementById('study');
+var inputTwo = document.getElementById('company');
+var inputThree = document.getElementById('experience');
 var subBtn = document.getElementById('formUserSubmit');
 
 var print = document.getElementById('vacant')
 
 subBtn.addEventListener('click' , createVacant);
 
-const createVacant = (input) => {
-  console.log(input)
+function createVacant(e){
+  e.preventDefault();
   
-  //var text = input.value();
-  console.log('es esto' + input)
-  paintVacant (input)
-  //console.log('aqui se pintara' + text);
+  const valOne = inputOne.value;
+  console.log(valOne);
+  const valTwo = inputTwo.value;
+  console.log(valTwo);
+  const valThree = inputThree.value;
+  console.log(valThree);
+  
+  paintObject(valOne,valTwo,valThree);
 
 }
 
-/*function paintVacant (input) {
-  console.log('no pinta lo que quiero')
-  var div = document.createElement("div");
-  var p = document.createElement("p");
-  
+const paintObject = (valOne,valTwo,valThree) =>{
+    console.log(valOne,valTwo,valThree);
+let object = [{
+    firstInput:valOne,
+    secondInput:valTwo,
+    threeInput:valThree
+}]
+//console.log(object);
+objectToLocalStorage(object);
+}
 
-  p.innerText = input;
+const objectToLocalStorage= json =>{
+    //console.log(json);
+   let jsonInputs = json;
+   let jsonToString = JSON.stringify(jsonInputs);
+   const toLocalStorage = localStorage.setItem('profileUserStorage',jsonToString);
+   gettingData(toLocalStorage);
+}
 
-  div.appendChild(p);
-  print.appendChild(div);
-  
-    
-  }*/
+const gettingData = storage => {
+    let storedData = localStorage.getItem('profileUserStorage');
+    let stringToJson = (JSON.parse(storedData));
+    console.log(stringToJson);
+    window.location.href = "../views/home-user.html"
+}
+
