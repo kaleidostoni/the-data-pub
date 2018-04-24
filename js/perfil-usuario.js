@@ -7,47 +7,28 @@ var inputTwo = document.getElementById('company');
 var inputThree = document.getElementById('experience');
 var subBtn = document.getElementById('formUserSubmit');
 
-var print = document.getElementById('vacant')
+subBtn.addEventListener('click', function createVacant(e) {
+    e.preventDefault();
+    const valOne = inputOne.value;
+    const valTwo = inputTwo.value;
+    const valThree = inputThree.value;
+    createObject(valOne, valTwo, valThree);
+});
 
-subBtn.addEventListener('click' , createVacant);
-
-function createVacant(e){
-  e.preventDefault();
-  
-  const valOne = inputOne.value;
-  console.log(valOne);
-  const valTwo = inputTwo.value;
-  console.log(valTwo);
-  const valThree = inputThree.value;
-  console.log(valThree);
-  
-  paintObject(valOne,valTwo,valThree);
-
+const createObject = (valOne, valTwo, valThree) => {
+    //console.log(valOne, valTwo, valThree);
+    let object = [{
+        firstInput: valOne,
+        secondInput: valTwo,
+        threeInput: valThree
+    }]
+    objectToLocalStorage(object);
 }
 
-const paintObject = (valOne,valTwo,valThree) =>{
-    console.log(valOne,valTwo,valThree);
-let object = [{
-    firstInput:valOne,
-    secondInput:valTwo,
-    threeInput:valThree
-}]
-//console.log(object);
-objectToLocalStorage(object);
-}
-
-const objectToLocalStorage= json =>{
-    //console.log(json);
-   let jsonInputs = json;
-   let jsonToString = JSON.stringify(jsonInputs);
-   const toLocalStorage = localStorage.setItem('profileUserStorage',jsonToString);
-   gettingData(toLocalStorage);
-}
-
-const gettingData = storage => {
-    let storedData = localStorage.getItem('profileUserStorage');
-    let stringToJson = (JSON.parse(storedData));
-    console.log(stringToJson);
+const objectToLocalStorage = object => {
+    const toLocalStorage = localStorage.setItem('profileUserStorage', JSON.stringify(object));
     window.location.href = "../views/home-user.html"
 }
+
+
 
