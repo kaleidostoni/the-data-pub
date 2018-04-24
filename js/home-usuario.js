@@ -6,8 +6,8 @@ window.onload = function() {
     //const getPhotoGoogle = localStorage.getItem('usuario');
     //const parsedDataGoogle = JSON.parse(getPhotoGoogle);
 
-    const gettingData = (parsedData,parsedDataGoogle) => {
-        let divProfileForm = document.getElementById('profileDataForm');
+    const gettingData = (parsedData) => {
+        let divProfileForm = document.getElementById('profile');
         let output;
         let nodeList = Array.from(document.querySelectorAll('.form-control'))
         let userInfo = parsedData[0];
@@ -26,7 +26,7 @@ window.onload = function() {
             </div>
         </div>`
 
-        console.log(html);
+        //console.log(html);
         divProfileForm.innerHTML = html;
 
     };
