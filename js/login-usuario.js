@@ -12,7 +12,7 @@ buttonGoogle.addEventListener('click', function () {
             console.log('La primer funcion' + usuario);
             
             localStorage.setItem('usuario', JSON.stringify(usuario))
-            window.location.href = '../views/home-user.html';
+            window.location.href = '../views/perfil1-user.html';
         })
 });
 
@@ -54,6 +54,6 @@ const gettingData = storage => {
     let storedData = localStorage.getItem('emailStorage');
     console.log(storedData);
     let stringToJson = (JSON.parse(storedData));
-    window.location.href = "../views/home-empresa.html"
+    window.location.href = "../views/perfil1-user.html"
     console.log(stringToJson);
 }
