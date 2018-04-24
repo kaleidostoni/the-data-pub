@@ -7,25 +7,24 @@ window.onload = function() {
         let divProfileForm = document.getElementById('profileDataForm');
         let output;
         let nodeList = Array.from(document.querySelectorAll('.form-control'))
-        console.log(nodeList)
-        parsedData.keys((key, indx) => {
-            console.log(key)
-            nodeList[indx].value = parsedData[key]
+        let userInfo = parsedData[0]
 
-            output = `<div class="card">
+        let html = `<div class="card">
             <div class="card-header">
                 Info del usuario
             </div>
             <div class="card-body">
-                <h5 class="card-title">${node[indx]}</h5>
-                <p class="card-text">${node[indx]}</p>
-                <p class="card-text">${node[indx]}</p>
-            </div>`
+                <h5 class="card-title">${userInfo.firstInput}</h5>
+                <p class="card-text">${userInfo.secondInput}</p>
+                <p class="card-text">${userInfo.threeInput}</p>
+            </div>
+        </div>`
 
-        });
-        divProfileForm.innerHTML = output;
+        console.log(html);
+        divProfileForm.innerHTML = html;
 
     };
     
+    gettingData(parsedData) 
 };
 
