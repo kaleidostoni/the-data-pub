@@ -4,24 +4,23 @@ window.onload = function() {
     //console.log(parseData);
 
     //const getPhotoGoogle = localStorage.getItem('usuario');
-    //const parseDataGoogle = JSON.parse(getPhotoGoogle);
-    //console.log(parseDataGoogle);
+    //const parsedDataGoogle = JSON.parse(getPhotoGoogle);
 
     const gettingData = (parsedData,parsedDataGoogle) => {
         let divProfileForm = document.getElementById('profileDataForm');
         let output;
         let nodeList = Array.from(document.querySelectorAll('.form-control'))
         let userInfo = parsedData[0];
-        console.log(userInfo);
-        //let userGoogle = parsedDataGoogle;
+        //console.log(userInfo);
+        
 
         let html = `<div class="card">
             <div class="card-header">
-            <img id="photo" src="">
-            <p id="name"></p>
+            <img id="photo" src="https://dummyimage.com/100x100/fff/000.png">
             </div>
             <div class="card-body">
-                <h5 class="card-title">${userInfo.firstInput}</h5>
+                <h5 class="card-title">${userInfo.name}</h5>
+                <p class="card-text">${userInfo.secondInput}</p>
                 <p class="card-text">${userInfo.secondInput}</p>
                 <p class="card-text">${userInfo.threeInput}</p>
             </div>
