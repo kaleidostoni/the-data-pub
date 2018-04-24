@@ -5,7 +5,7 @@ const btnNext = () => {
 const inputOne = document.getElementById('study');
 const inputTwo = document.getElementById('company');
 const inputThree = document.getElementById('experience');
-const subBtn = document.getElementById('formUserProfile');
+const subBtn = document.getElementById('formUser');
 
 
 const createVacant = (e) => {
@@ -27,13 +27,13 @@ const createObject = (valOne, valTwo, valThree) => {
     }]
     objectToLocalStorage(object);
 }
-        subBtn.addEventListener('submit',createVacant);
 
 const objectToLocalStorage = object => {
     const toLocalStorage = localStorage.setItem('profileUserStorage', JSON.stringify(object));
     window.location.href = "../views/home-user.html"
 }
 
+subBtn.addEventListener('submit',createVacant);
 
 
 
