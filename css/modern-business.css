@@ -2,10 +2,15 @@
  * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ font-family: 'IBM Plex Sans', sans-serif;
+ font-family: 'Playfair Display', serif;
  */
 
 body {
   padding-top: 54px;
+}
+body{
+font-family: 'IBM Plex Sans', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -43,4 +48,7 @@ body {
 
 .btn-primary {
   border-color: #0000;
+}
+.logo-principal{
+
 }
