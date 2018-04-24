@@ -11,9 +11,17 @@ En TW: https://twitter.com/thedatapub
 
 ## UX
 
-Competencia directa:
+#### Competencia directa:
 
 + http://www.recluit.com/
-+ https://www.glassdoor.com/index.htm
 + https://www.tecnoempleo.com/
-+ http://wheresheworks.com/about-us/
++ https://www.lawebdelprogramador.com/trabajo/
++ https://www.ticjob.es/
++ https://es.informaticos.trabajar.com
+
+
+#### Design System
+
+![Paleta de color](assets/images/paleta-colores.jpg)
+
+![Tipografía](assets/images/tipografia.jpg)
