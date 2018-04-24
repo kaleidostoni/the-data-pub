@@ -28,11 +28,12 @@ font-family: 'IBM Plex Sans', sans-serif;
   -o-background-size: cover;
   background-size: cover;
 }
-.caption-carousel{
-color: #EB5B29;
-font-family:'Playfair Display', serif;
+
+.caption-carousel2{
+text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 font-weight: 400;
-font-size: 50px;
+font-family: serif;
+font-size: 45px;
 }
 
 .portfolio-item {
