@@ -38,6 +38,6 @@ const gettingData = storage => {
     let storedData = localStorage.getItem('emailStorage');
     console.log(storedData);
     let stringToJson = (JSON.parse(storedData));
-    window.location.href = "../views/home-empresa.html"
+    window.location.href = "../views/perfil-empresa-1.html"
     console.log(stringToJson);
 }
