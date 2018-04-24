@@ -13,50 +13,157 @@
     <title>Company Home</title>
 </head>
 <body>
-        <h1>HOME</h1>
-        <h3>Publica una vacante</h3>
-        <form id="job-form">
-                <div class="form-group">
-                        <label for="question1">¿Qué estás buscando?</label>
-                        <select class="form-control" id="question1">
-                          <option selected="selected">Chief Data Officer</option>
-                          <option selected="selected">Chief Data Scientist</option>
-                          <option selected="selected">Data Scientist</option>
-                          <option selected="selected">Data Analyst</option>
-                          <option selected="selected">Data Engineer</option>
-                          <option selected="selected">BI Analyst</option>
-                        </select>
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <div class="logo-principal">
+        <img src="../assets/images/logo_principal.png" width="40px" alt="logo">
+      </div>
+      <a class="navbar-brand" href="index.html">The Data Pub</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="services.html"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html"></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Involúcrate
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="services.html">Abre un Data Pub</a>
+              <a class="dropdown-item" href="services.html">Quiero dar una charla</a>
+            </div>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!-- Imagen de presentación -->
+
+<header>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('../assets/images/home-empresa.jpg')">
+        <div class="carousel-caption d-none d-md-block display-4">
+          <h1 class="caption-carousel2 home-empresas">Publica una vacante</h1>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+
+
+
+<div class="container">
+
+      <!-- HOME -->
+      <h1 class="mt-4 mb-3">HOME
+        <small></small>
+      </h1>
+      <h3 class="mt-4 mb-3">Crea una vacante
+        <small></small>
+      </h3>
+      <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-12">
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+              <div class="card-body">
+
+                <form id="job-form">
                         <div class="form-group">
-                                <label for="question2">2.¿Qué necesita saber? (lista de capacidades)</label>
-                                <textarea class="form-control" id="question2" rows="5"></textarea>
-                         </div>
-                         <div class="form-group">
-                                <label for="question3">3.¿Cómo va a ser su día a día?</label>
-                                <textarea class="form-control" id="question3" rows="5"></textarea>
-                         </div>
-                         <div class="form-group">
-                                <label for="question4">4.¿Cómo vas a saber si te está entregando valor?</label>
-                                <textarea class="form-control" id="question4" rows="5"></textarea>
-                         </div>
-                         <div class="form-group">
-                                <label for="question5">5.¿Cuánto pagarás, y en qué esquema? (obligatorio)</label>
-                                <textarea class="form-control" id="question5" rows="5"></textarea>
-                         </div>
-                         <div class="form-group">
-                                <label for="question6">6.¿Qué ofreces aparte del sueldo?</label>
-                                <textarea class="form-control" id="question3" rows="6"></textarea>
-                         </div>
-                         <div class="form-group">
-                                <label for="question6">7.¿Dónde te ubicas?</label>
-                                <textarea class="form-control" id="question3" rows="6"></textarea>
-                         </div>
-                        <div class="form-group row">
-                                <div class="col-sm-10">
-                                  <button id="submit-btn" type="submit" class="btn btn-primary">Sign in</button>
-                                </div>
+                                <label for="question1">¿Qué estás buscando?</label>
+                                <select class="form-control" id="question1">
+                                  <option selected="selected">Chief Data Officer</option>
+                                  <option selected="selected">Chief Data Scientist</option>
+                                  <option selected="selected">Data Scientist</option>
+                                  <option selected="selected">Data Analyst</option>
+                                  <option selected="selected">Data Engineer</option>
+                                  <option selected="selected">BI Analyst</option>
+                                </select>
+                                <div class="form-group">
+                                        <label for="question2">2.¿Qué necesita saber? (lista de capacidades)</label>
+                                        <textarea class="form-control" id="question2" rows="5"></textarea>
+                                 </div>
+                                 <div class="form-group">
+                                        <label for="question3">3.¿Cómo va a ser su día a día?</label>
+                                        <textarea class="form-control" id="question3" rows="5"></textarea>
+                                 </div>
+                                 <div class="form-group">
+                                        <label for="question4">4.¿Cómo vas a saber si te está entregando valor?</label>
+                                        <textarea class="form-control" id="question4" rows="5"></textarea>
+                                 </div>
+                                 <div class="form-group">
+                                        <label for="question5">5.¿Cuánto pagarás, y en qué esquema? (obligatorio)</label>
+                                        <textarea class="form-control" id="question5" rows="5"></textarea>
+                                 </div>
+                                 <div class="form-group">
+                                        <label for="question6">6.¿Qué ofreces aparte del sueldo?</label>
+                                        <textarea class="form-control" id="question3" rows="6"></textarea>
+                                 </div>
+                                 <div class="form-group">
+                                        <label for="question6">7.¿Dónde te ubicas?</label>
+                                        <textarea class="form-control" id="question3" rows="6"></textarea>
+                                 </div>
+
                         </div>
-                </div>
-        </form>
+
+
+                        <!--Botón de enviar-->
+                                    <div class="form-group row">
+                                      <div class="col-sm-12">
+                                        <button type="submit" class="btn btn-right pull-right btn-primary">Sign in</button>
+                                      </div>
+                                    </div>
+
+
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- Bootstrap core JavaScript -->
         <script src="../vendor/jquery/jquery.min.js"></script>
         <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
