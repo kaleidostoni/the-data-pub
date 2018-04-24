@@ -28,6 +28,12 @@ font-family: 'IBM Plex Sans', sans-serif;
   -o-background-size: cover;
   background-size: cover;
 }
+.caption-carousel{
+color: #EB5B29;
+font-family:'Playfair Display', serif;
+font-weight: 400;
+font-size: 50px;
+}
 
 .portfolio-item {
   margin-bottom: 30px;
@@ -50,5 +56,8 @@ font-family: 'IBM Plex Sans', sans-serif;
   border-color: #0000;
 }
 .logo-principal{
-
+}
+.btn-login-user {
+  padding: 12px 28px;
+  font-size: 15px;
 }
