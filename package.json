@@ -1,0 +1,14 @@
+{
+  "name": "the-data-pub",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kaleidostoni/the-data-pub.git",
+  "author": "Rodrigo Quezada <roderik.ikana@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.23.7"
+  },
+  "scripts": {
+    "dev": "browser-sync start --ss . -s --index index.html -f ."
+  }
+}
