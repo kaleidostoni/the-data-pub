@@ -6,6 +6,9 @@
  font-family: 'Playfair Display', serif;
  */
 
+
+
+
 body {
   padding-top: 54px;
 }
@@ -71,3 +74,10 @@ font-size: 45px;
 .pull-right {
   margin-left: 613px;
 }
+<<<<<<< HEAD
+=======
+
+.home-empresas {
+  color: #D0D0D0;
+}
+>>>>>>> upstream/master
